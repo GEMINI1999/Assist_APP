@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_arrow_back_white_36dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="朗读员"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:id="@+id/tv_title" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/underline"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="当前朗读员"
+                    android:textColor="#000"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/current_reader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#E9E9E9"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="朗读员选择" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/readers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/jiajia"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radiobutton_bottom_line"
+                    android:checked="false"
+                    android:drawableEnd="@drawable/ic_volume_up_black_24dp"
+                    android:drawableStart="@drawable/ic_filter_1_black_24dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="嘉佳"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/xiaokun"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radiobutton_bottom_line"
+                    android:checked="false"
+                    android:drawableEnd="@drawable/ic_volume_up_black_24dp"
+                    android:drawableStart="@drawable/ic_filter_2_black_24dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="小坤"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/xiaoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radiobutton_bottom_line"
+                    android:checked="false"
+                    android:drawableEnd="@drawable/ic_volume_up_black_24dp"
+                    android:drawableStart="@drawable/ic_filter_3_black_24dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="小明"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/xiaomei"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/radiobutton_bottom_line"
+                    android:checked="false"
+                    android:drawableEnd="@drawable/ic_volume_up_black_24dp"
+                    android:drawableStart="@drawable/ic_filter_4_black_24dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="小美"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/help"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_help_black_36dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帮助"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

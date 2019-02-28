@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:src="@mipmap/arrow_left" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:src="@mipmap/arrow_right1" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="向左向右移动设置语速"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
