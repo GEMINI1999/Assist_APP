@@ -96,7 +96,7 @@
                     android:drawableStart="@drawable/ic_filter_1_black_24dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="嘉佳"
+                    android:text="普通女声"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -109,7 +109,7 @@
                     android:drawableStart="@drawable/ic_filter_2_black_24dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="小坤"
+                    android:text="普通男声"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -122,7 +122,7 @@
                     android:drawableStart="@drawable/ic_filter_3_black_24dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="小明"
+                    android:text="性感男声"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -135,7 +135,7 @@
                     android:drawableStart="@drawable/ic_filter_4_black_24dp"
                     android:paddingLeft="20dp"
                     android:paddingRight="20dp"
-                    android:text="小美"
+                    android:text="儿童女声"
                     android:textSize="20sp" />
             </RadioGroup>
 

@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (!isWrite) {
             SharedPreferences.Editor editor = getSharedPreferences("data", MODE_PRIVATE).edit();
-            editor.putString("currentSpeaker", "嘉佳");
+            editor.putString("currentSpeaker", "普通女声");
             editor.putString("currentSpeakerNumber", "0");
             editor.putString("messages", "");//存从剪切板中获取到的字符串
             editor.putInt("speakSpeed", 50);

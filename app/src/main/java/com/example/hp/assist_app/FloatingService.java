@@ -155,8 +155,7 @@ public class FloatingService extends Service {
                 .setContentTitle("“听字”已开启")
                 .setContentText("更多选项")
                 .setWhen(System.currentTimeMillis())
-                .setSmallIcon(R.drawable.ic_check_circle_white_24dp)
-                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_check_circle_white_24dp))
+                .setSmallIcon(R.drawable.listen72)
                 .setContentIntent(pi)
                 .setChannelId(CHANNEL_ONE_ID)
                 .build();
@@ -199,8 +198,8 @@ public class FloatingService extends Service {
         if (Settings.canDrawOverlays(this)) {
             imageButton = new ImageButton(getApplicationContext());
             imageButton.setElevation(10);
-            imageButton.setImageResource(R.drawable.ic_check_circle_white_24dp);
-            imageButton.setColorFilter(Color.RED);
+            imageButton.setImageResource(R.drawable.listen72);
+//            imageButton.setColorFilter(Color.RED);`
             windowManager.addView(imageButton, layoutParams);
             imageButton.setVisibility(View.INVISIBLE);
             imageButton.setOnTouchListener(new FloatingOnTouchListener());
